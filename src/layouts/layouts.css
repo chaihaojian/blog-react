@@ -1,0 +1,30 @@
+#layout{
+  height: 100%;
+  overflow: auto;
+}
+
+#nav-header{
+  background-color: rgb(255, 255, 255);
+  padding: 0 40px;
+  z-index: 10;
+  box-shadow: 0 2px 8px #f0f1f2 ;
+}
+
+#lsider{
+  padding-left: 40px;
+}
+
+@media screen and (max-width:780px) {
+  #lsider{
+    display: none;
+  }
+  #contents-layout{
+    padding: 0 0 0;
+  }
+  #nav-header{
+    padding: 0 0;
+  }
+  #rsider{
+    display: none;
+  }
+}
