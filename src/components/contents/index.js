@@ -9,12 +9,11 @@ class Contents extends React.Component {
         return (
             <div className="contents" style={{ overflow: "auto" }}>
                 <Breadcrumb style={{ margin: '16px 0' }}>
-                    <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>App</Breadcrumb.Item>
+                    <Breadcrumb.Item>数值分析</Breadcrumb.Item>
+                    <Breadcrumb.Item>插值方法</Breadcrumb.Item>
                 </Breadcrumb>
                 <Content className="contents-content" style={{ height: "800px" }}>
                     <article>
-                        <h2>数值分析</h2>
                         <h3>插值方法</h3>
                         <p>
                             本笔记权作为本学期数值分析学习的总结和回顾，参考教材有徐萃薇、孙绳武编的《计算方法引论》，和Timothy Sauer的《数值分析》。这一节介绍的是求解方程（主要针对非线性方程）的方法。
