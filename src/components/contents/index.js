@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Breadcrumb } from 'antd';
 import "./index.css"
 
-const { Content } = Layout;
+const { Content, Footer } = Layout;
 
 class Contents extends React.Component {
     render() {
@@ -12,7 +12,7 @@ class Contents extends React.Component {
                     <Breadcrumb.Item>数值分析</Breadcrumb.Item>
                     <Breadcrumb.Item>插值方法</Breadcrumb.Item>
                 </Breadcrumb>
-                <Content className="contents-content" style={{ height: "800px" }}>
+                <Content className="contents-content" >
                     <article>
                         <h3>插值方法</h3>
                         <p>
@@ -48,6 +48,7 @@ class Contents extends React.Component {
                             </p>
                     </article>
                 </Content>
+                <Footer style={{ textAlign: 'center', backgroundColor:"rgb(255, 255, 255)", paddingBottom:"12px" }}>Ant Design ©2018 Created by Ant UED</Footer>
             </div>
         );
     }

@@ -4,27 +4,59 @@
 }
   
 .nav-header-row-logo{
-    display: table-cell;
-    text-align: center;
+    display: inline;
     float: left;
+    text-align: left;
     width: 15%;
     height: 64px;
     background-color: rgb(255, 255, 255);
 }
   
 .nav-header-row-info{
-    margin-left: 20%;
+    display: inline;
+    float: left;
     height: 64px;
+    width: 78%;
     background-color: rgb(255, 255, 255);
 }
 
+.nav-header-row-git{
+    display: inline;
+    float: left;
+    height: 64px;
+    background-color: rgb(255, 255, 255);
+    width: 6%;
+    text-align: left;
+}
+
+#logo-boder{
+    margin-top: 17px;
+    height: 30px;
+    width: 0;
+    border-right: 1px solid #f0f0f0;
+    display: inline;
+    float: left;
+}
+
 #logo{
-    width: 80%;
+    width: 90%;
     height: 80%;
+}
+
+#git-logo{
+    margin-top: 25px;
+    font-size: 175%;
+    text-align: left;
 }
 
 @media screen and (max-width:780px) {
     .nav-header-row-logo{
         width: 35%;
+    }
+    .nav-header-row-info{
+        width: 50%;
+    }
+    .nav-header-row-git{
+        width: 14%;
     }
 }

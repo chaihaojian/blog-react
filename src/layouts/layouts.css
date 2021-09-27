@@ -11,8 +11,25 @@
   width: 100%;
 }
 
+#main-layout{
+  padding-top: 40px; 
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
 #lsider{
   padding-left: 40px;
+  overflow: auto;
+}
+
+#contents-layout{
+  padding: 0 24px 0;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+#rsider{
+  background-color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width:780px) {
@@ -20,10 +37,10 @@
     display: none;
   }
   #contents-layout{
-    padding: 0 0 0;
+    padding: 0 12px 0;
   }
   #nav-header{
-    padding: 0 0;
+    padding: 0 12px;
   }
   #rsider{
     display: none;

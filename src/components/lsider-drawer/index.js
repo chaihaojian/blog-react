@@ -38,7 +38,7 @@ class LsiderDrawer extends React.Component {
                     key={placement}
                     width="220px"
                     handler={
-                        <Button id="drawer-btn" type="primary" onClick={this.showDrawer} style={{ zIndex: "1", top:"75px", left:"220px", position:"absolute", padding:"0", width:"35px", height:"35px", backgroundColor:"white", border:"0"}}>
+                        <Button id="drawer-btn" type="primary" onClick={this.showDrawer}>
                             <UnorderedListOutlined style={{color:" #000000d9"}}/>
                         </Button>}
                         >

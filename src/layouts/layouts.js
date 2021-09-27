@@ -7,7 +7,7 @@ import Contents from '../components/contents';
 import LsiderDrawer from '../components/lsider-drawer';
 import "./layouts.css";
 
-const { Header, Sider, Footer } = Layout;
+const { Header, Sider } = Layout;
 
 class Layouts extends React.Component {
   render() {
@@ -16,16 +16,15 @@ class Layouts extends React.Component {
         <Header id="nav-header">
           <Nav/>
         </Header>
-        <Layout style={{ paddingTop:"40px", backgroundColor:"rgb(255, 255, 255)", overflow:"auto"}}>
-          <Sider width={'18%'} theme={'light'} id="lsider" style={{overflow:"auto"}}>
+        <Layout id="main-layout">
+          <Sider width={'18%'} theme={'light'} id="lsider">
             <Lsider/>
           </Sider>
           <LsiderDrawer id="lsider-drawer"/>
-          <Layout id="contents-layout" style={{ padding: '0 24px 0', backgroundColor:"rgb(255, 255, 255)", overflow:"auto" }}>
+          <Layout id="contents-layout">
             <Contents/>
-            <Footer style={{ textAlign: 'center', backgroundColor:"rgb(255, 255, 255)", overflow:"auto", paddingBottom:"12px" }}>Ant Design ©2018 Created by Ant UED</Footer>
           </Layout>
-          <Sider width={'10%'} id="rsider" style={{backgroundColor:"rgb(255, 255, 255)"}}>
+          <Sider width={'10%'} id="rsider">
             <Rsider/>
           </Sider>
         </Layout>
